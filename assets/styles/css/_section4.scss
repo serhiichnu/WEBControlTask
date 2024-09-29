@@ -1,0 +1,86 @@
+@import '_shared.scss';
+@import '_variables.scss';
+
+.section4 {
+    .container{
+        justify-content: center;
+        margin-left: 123px;
+        margin-right: 123px;
+        gap: 90px;
+    }
+
+    .card {
+        
+        min-width: 338px;
+        min-height: 413px;
+        margin-top: 108px;
+        text-align: center;
+        .card-block {
+            display: flex;
+            flex-direction: column;
+            justify-content:start;
+            align-items: center;
+
+            gap: 16px;
+            padding: 0 39px 0 39px;
+        }
+        .circle {
+            position: relative;
+            width: 166px;
+            height: 166px;
+            border-radius: 166px;
+            
+            margin: auto;
+            margin-top: -39px;
+            img {
+                position: absolute;
+                top: 55px;
+                left: 59px;
+            }
+        }
+        h3 {
+            margin: 4px 0 2px 0;
+            font-family: Impact Regular;
+            font-size: 34px;
+            line-height: normal;
+        }
+        span {
+            font-family: Roboto Bold;
+            font-size: 18px;
+            line-height: 21.1px;
+            text-align: center;
+        }
+        .caption {
+            font-family: Roboto Regular;
+            font-size: 18px;
+            line-height: 144.7%;
+            
+        }
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            gap: 6px;
+        }
+    }
+    .card-purple {
+        .circle {
+            background-color: $purpleCard;
+        }
+    }
+    .card-blue {
+        .circle {
+            background-color: $blueCard;
+        }
+    }
+    .card-red {
+        .circle {
+            background-color: $redCard;
+            img {
+                top: 51px;
+                left: 50px;
+            }
+        }
+    }
+}

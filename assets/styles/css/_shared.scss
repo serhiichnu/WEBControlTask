@@ -1,0 +1,58 @@
+@import '_variables.scss';
+
+.button {
+    padding: 16px 24px 16px 24px;
+    border-radius: 35px;
+    color: $mainTextColor;
+    font-family: Roboto Bold;
+    line-height: 1.165;
+    display: flex;
+    gap: 16px;
+    border: none;
+}
+.button-primary {
+    background-color: $primaryColor;
+}
+.button-border-primary {
+    box-sizing: border-box;
+    border: solid;
+    border-width: 1px;
+    border-color: $primaryColor;
+    padding: 15px 23px;
+}
+
+main section {
+    margin: 140px 12.5% 0 12.5%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: Roboto Regular;
+    font-size: 16px;
+    line-height: 113.7%;
+}
+.block-shadow {
+    box-shadow: 8px -10px 23px $blockShadowColor, -8px 10px 23px $blockShadowColor;
+    border-radius: $baseBorderRadius;
+}
+input {
+    padding: 16px 24px 10px 24px;
+    text-decoration: none;
+    border: none;
+    background-color: $mainTextColor;
+    border-radius: $baseBorderRadius;
+    width: 88%;
+}
+input::placeholder {
+    font-family: Roboto Regular;
+    font-size: 18px;
+    line-height: 144.7%;
+    color: $grayColor;
+}

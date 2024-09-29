@@ -1,0 +1,31 @@
+@import '_shared.scss';
+@import '_variables.scss';
+
+.section6 {
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    .block {
+        display: flex;
+        width: 100%;
+        gap: 109px;
+        .content {
+            padding: 30px 0 30px 40px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            span {
+                font-family: Roboto Medium;
+                font-size: 28px;
+                line-height: normal;
+                width: 42%;
+            }
+            p {
+                margin: 0;
+                width: 48%;
+            }
+        }
+    }
+}

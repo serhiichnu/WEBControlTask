@@ -1,0 +1,61 @@
+@import '_shared.scss';
+@import '_variables.scss';
+
+.section2 {
+    h2 {
+        width: 42%;
+    }
+    p {
+        width: 25.55%;
+        margin: 20px 0 17px 0;
+        line-height: 144.7%;
+    }
+    h3 {
+        font-family: Roboto Bold;
+        font-size: 24px;
+        line-height: normal;
+        margin: 0;
+    }
+    .button {
+        color: $primaryColor;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        width: 100%;
+        .grid-item {
+            background-color: $white;
+            box-shadow: 1px 1px 21px $shadowColor;
+            width: auto;//min(280px, 85%);
+            height: auto;
+            border-radius: 10px;
+            padding: 40px 24px 32px 32px;
+
+            .container-row {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                height: 100%;
+                
+            }
+            p {
+                width: 100%;
+                font-size: 18px;
+                margin: 8px 0 0 0;
+            }
+        }
+        .grid-item-big-vertical {
+            height: auto;
+            background-color: $acidCard;
+            grid-row: span 2;
+        }
+        .grid-item-big-horizontal {
+            width: auto;
+            background-color: $redCard;
+            grid-column: span 2;
+        }
+    }
+}

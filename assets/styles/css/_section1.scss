@@ -1,0 +1,71 @@
+@import '_shared.scss';
+@import '_variables.scss';
+
+.section1 {
+    .part1 {
+        width: 100%;
+
+       
+        p {
+            width: min(424px, 65%);
+        }
+        img {
+            width: inherit;
+        }
+    }
+    .container {
+        gap: 40px;
+    }
+    .part2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: min(24px, 10%);
+        row-gap: 32px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: auto;
+            height: 217px;
+            background-color: black;
+            border-radius: $baseBorderRadius;
+            text-align: center;
+            padding: 45px 18px 0 18px;
+            color: $mainTextColor;
+
+            span {
+                margin-top: 23px;
+                font-family: Impact Regular;
+                font-size: 48px;
+                line-height: normal;
+            }
+
+            p {
+                margin-top: 12px;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: normal;
+            }
+        }
+        .card-red {
+            background-color: $redCard;
+        }
+        .card-orange {
+            background-color: $orangeCard;
+        }
+        .card-acid {
+            background-color: $acidCard;
+        }
+        .card-green {
+            background-color: $greenCard;
+        }
+        .card-purple {
+            background-color: $purpleCard;
+        }
+        .card-blue {
+            background-color: $blueCard;
+        }
+    }
+}

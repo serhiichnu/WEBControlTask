@@ -1,0 +1,54 @@
+@import '_variables.scss';
+
+
+@media (max-width: 1100px) {
+    header 
+    {
+        height: 335px;
+        .container .menu-block {
+            display: none;
+        }
+        nav .menu-button {
+            display: block;
+        }
+        nav {
+            padding-left: 16px;
+            padding-right: 17px;
+            padding-top: 16px;
+            height: 29px;
+            svg {
+                height: 29px;
+                width: 193px;
+            }
+        }
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: flex;
+        }
+        
+    }
+    .header-background {
+        background-image: url('../../../resourses/mobile-bg-header.png');
+    }
+
+}
+
+@media (max-width: 1450px) {
+    header {
+        .menu-block{
+            width: 100%;
+            .navigation {
+                width: 100%;
+            }
+            .navigation-link {
+                padding: 5px 10px !important;
+                margin-bottom: 5px;
+            }
+            .dropdown {
+                margin-bottom: 5px;
+            }
+        }
+    }    
+}
