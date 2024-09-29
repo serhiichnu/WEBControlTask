@@ -62,7 +62,6 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-right: 9.16%;
         width: 100%;
         .block1 {
             display: flex;
@@ -80,11 +79,12 @@ footer {
             }
         }
         .block2 {
+            width: 40.25%;
             display: block;
             form {
                 margin-top: 32px;
                 display: flex;
-                width: auto;
+                
                 button {
                     display: block;
                     margin-left: -48px;
@@ -98,7 +98,7 @@ footer {
                 line-height: 144.7%;
                 padding-top: 12px;
                 padding-bottom: 10px;
-                width: 380px;
+                width: 100%;
             }
             span {
                 font-family: Roboto Medium;

@@ -6,8 +6,60 @@ header {
         padding-left: 65px;
         padding-right: 65px;
         padding-top: 23px;
-        height: 128px;
+        height: auto;
         
+        #sidebar .main {
+            margin-top: 0;
+            padding-left: 0;
+            padding-right: 18.67px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #sidebar {
+            display: none;
+            position: fixed;
+            top:0;
+            right: 0;
+            list-style-type: none;
+            background-color: $primaryColor;
+            height: 100vh;
+            padding-top: 65px;
+            padding-left: 15px;
+            width: 375px;
+            margin: 0;
+            font-weight: medium;
+            font-size: 24px;
+            li {
+                margin-top: 24px;
+                padding-left: 5px;
+                ul { 
+                    list-style-type: none;
+                    padding-left: 0;
+                    margin-top: 24px;
+                    li {
+                        margin-bottom: 16px;
+                        margin-top: 0;
+                        font-weight: regular;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .text-l {
+                margin-top: 32px;
+            }
+            .social {
+                padding-left: 0;
+                ul {
+                    padding-left: 1px;
+                    display: inline;
+                    li {
+                        display: inline;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
         .menu-button{
             display: none;
         }

@@ -103,7 +103,59 @@ header nav {
   padding-left: 65px;
   padding-right: 65px;
   padding-top: 23px;
-  height: 128px;
+  height: auto;
+}
+header nav #sidebar .main {
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 18.67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav #sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  background-color: #883CDA;
+  height: 100vh;
+  padding-top: 65px;
+  padding-left: 15px;
+  width: 375px;
+  margin: 0;
+  font-weight: medium;
+  font-size: 24px;
+}
+header nav #sidebar li {
+  margin-top: 24px;
+  padding-left: 5px;
+}
+header nav #sidebar li ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 24px;
+}
+header nav #sidebar li ul li {
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-weight: regular;
+  font-size: 16px;
+}
+header nav #sidebar .text-l {
+  margin-top: 32px;
+}
+header nav #sidebar .social {
+  padding-left: 0;
+}
+header nav #sidebar .social ul {
+  padding-left: 1px;
+  display: inline;
+}
+header nav #sidebar .social ul li {
+  display: inline;
+  padding-left: 0;
 }
 header nav .menu-button {
   display: none;
@@ -1111,7 +1163,6 @@ footer .footer-section1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-right: 9.16%;
   width: 100%;
 }
 footer .footer-section1 .block1 {
@@ -1130,12 +1181,12 @@ footer .footer-section1 .block1 li {
   display: inline;
 }
 footer .footer-section1 .block2 {
+  width: 40.25%;
   display: block;
 }
 footer .footer-section1 .block2 form {
   margin-top: 32px;
   display: flex;
-  width: auto;
 }
 footer .footer-section1 .block2 form button {
   display: block;
@@ -1148,7 +1199,7 @@ footer .footer-section1 .block2 input {
   line-height: 144.7%;
   padding-top: 12px;
   padding-bottom: 10px;
-  width: 380px;
+  width: 100%;
 }
 footer .footer-section1 .block2 span {
   font-family: Roboto Medium;
@@ -1186,6 +1237,9 @@ footer .container {
   }
   .header-background {
     background-image: url("../../../resourses/mobile-bg-header.png");
+  }
+  main {
+    display: none;
   }
 }
 @media (max-width: 1450px) {
